@@ -66,6 +66,7 @@ export function LoginContext ({ children }) {
 
   const loginSource = {
     isLogin,
+    setIsLogin,
     userLogin,
     checkIsUserLogin
   }
