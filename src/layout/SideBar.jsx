@@ -17,34 +17,27 @@ function SideBar () {
     <>
       <Header />
 
+      <div className="container">
+        <div className="row w-100 vh-100 ps-3">
+          <div className="col-2 mt-4">
+            <ul className="d-flex flex-column gap-3 list-unstyled">
+              <li>
+                <Link className="btn border-0 p-0">
+                  <h2 className="fw-bold">產品管理</h2>
+                </Link>
+              </li>
 
-      <div className="row w-100 vh-100">
-        <div className="col-2 mt-3">
-          <ul className="d-flex flex-column gap-3 list-unstyled text-center">
-            <li>
-              <Link className="btn border-0">
-                <h3>產品管理</h3>
-              </Link>
-            </li>
+              <li>
+                <h5>待新增頁面...</h5>
+              </li>
+            </ul>
+          </div>
 
-            <li>
-              <Link to='orders' className="btn border-0">
-                <h3>訂單管理</h3>
-              </Link>
-            </li>
+          <div className="col-10">
 
-            <li>
-              <Link to='coupon' className="btn border-0">
-                <h3>優惠券管理</h3>
-              </Link>
-            </li>
-          </ul>
-        </div>
+            <Outlet />
 
-        <div className="col-10">
-
-          <Outlet />
-
+          </div>
         </div>
       </div>
 

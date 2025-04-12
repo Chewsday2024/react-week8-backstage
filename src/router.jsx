@@ -6,10 +6,6 @@ import App from "./App";
 import SideBar from "./layout/SideBar";
 import Products from "./pages/products/Products";
 import Login from "./pages/login/Login";
-import Orders from "./pages/order/Orders";
-import Coupon from "./pages/coupon/Coupon";
-
-
 
 
 const router = createHashRouter([
@@ -28,14 +24,6 @@ const router = createHashRouter([
           {
             index: true,
             element: <Products />
-          },
-          {
-            path: 'orders',
-            element: <Orders />
-          },
-          {
-            path: 'coupon',
-            element: <Coupon />
           }
         ]
       }

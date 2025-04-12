@@ -3,9 +3,6 @@ import { createContext, useState } from "react";
 
 import { LoginContext } from "../../pages/login/loginContext";
 import { ProductsContext } from "../../pages/products/productsContext";
-import { OrdersContext } from "../../pages/order/ordersContext";
-import { CouponContext } from "../../pages/coupon/couponContext";
-
 
 
 export const context = createContext(null);
@@ -104,11 +101,7 @@ function ContextProvider ({ children }) {
     <context.Provider value={source}>
       <LoginContext>
         <ProductsContext>
-          <OrdersContext>
-            <CouponContext>
-              {children}
-            </CouponContext>
-          </OrdersContext>
+          {children}
         </ProductsContext>
       </LoginContext>
     </context.Provider>
