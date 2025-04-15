@@ -5,13 +5,13 @@ import { createRoot } from 'react-dom/client';
 
 
 
+import ContextProvider from './helpers/contextprovider/contextprovider';
 import router from './router';
 
 
 
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './assets/all.scss';
-import ContextProvider from './helpers/contextprovider/contextprovider';
 
 
 
